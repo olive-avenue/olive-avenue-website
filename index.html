@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olive Avenue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    </head>
+<body class="bg-dark text-light">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Olive Avenue Logo" width="50" height="50">
+                Olive Avenue
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Episodes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <body>
-        <h1>Heading for Olive Avenue Website</h1>
-        <p>test html</p>
-    </body>
+    <!-- Banner Image -->
+    <div class="banner-container">
+        <img src="banner.jpg" alt="Banner Image" class="img-fluid w-100">
+    </div>
+
+    <!-- Three Column Section -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="image1.jpg" alt="Column 1" class="img-fluid rounded mb-3">
+                <p>Short description of Column 1 content.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image2.jpg" alt="Column 2" class="img-fluid rounded mb-3">
+                <p>Short description of Column 2 content.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image3.jpg" alt="Column 3" class="img-fluid rounded mb-3">
+                <p>Short description of Column 3 content.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Two Column Section -->
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="bigimage1.jpg" alt="Big Column 1" class="img-fluid rounded mb-3">
+                <p>Description of Big Column 1 content.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="bigimage2.jpg" alt="Big Column 2" class="img-fluid rounded mb-3">
+                <p>Description of Big Column 2 content.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three Row Section -->
+    <div class="container py-5">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <img src="rowimage1.jpg" alt="Row 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <p>Description of Row 1 content.</p>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <img src="rowimage2.jpg" alt="Row 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <p>Description of Row 2 content.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="rowimage3.jpg" alt="Row 3" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <p>Description of Row 3 content.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bg-image text-center text-light py-5">
+            <p>Follow us on:</p>
+            <a href="#" class="btn btn-outline-light mx-2">Twitter</a>
+            <a href="#" class="btn btn-outline-light mx-2">Facebook</a>
+            <a href="#" class="btn btn-outline-light mx-2">Instagram</a>
+        </div>
+        <div class="footer-links text-center bg-primary text-light py-3">
+            <a href="#" class="text-light mx-2">Privacy Policy</a>
+            <a href="#" class="text-light mx-2">Terms of Service</a>
+            <p class="mt-2">&copy; 2025 Olive Avenue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.banner-container img {
+    height: 800px;
+    object-fit: cover;
+}
+
+.container img {
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer-bg-image {
+    background: url('footer-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.footer-bg-image p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+/* Button Hover Effects */
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+    .footer-bg-image p {
+        font-size: 1rem;
+    }
+
+    .footer-links p {
+        font-size: 0.8rem;
+    }
+}
