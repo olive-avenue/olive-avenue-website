@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olive Avenue</title>
+    <title>Apply - Olive Avenue</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <!-- embed information -->
     <meta content="olive-avenue.net" property="og:site_name">
-    <meta content="Home - Olive Avenue" property="og:title">
-    <meta content="Homepage for Olive Avenue. The YouTube animated series. This website is currently a work in progress." property="og:description">
+    <meta content="Episodes - Olive Avenue" property="og:title">
+    <meta content="Episodes page for olive-avenue.net. Browse all episodes in the Olive Avenue series." property="og:description">
     <meta name="theme-color" content="#33ccff">
     <meta name="msapplication-TileImage" content="https://olive-avenue.net/logo.png">
     <meta property="og:image" content="https://olive-avenue.net/logo.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
-
-    <link rel="icon" href="logo.png">
 </head>
 
 <body class="bg-dark text-light">
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top">
         <div class="container">
@@ -33,10 +32,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/episodes/">Episodes</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/meet-the-team/">Meet the Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/join-the-team/">Join the Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Join the Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://store.olive-avenue.net">Merch Store</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://wiki.olive-avenue.net">Wiki</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/about/">About</a></li>
@@ -44,70 +43,37 @@
             </div>
         </div>
     </nav>
-
     <!-- Banner Image -->
     <div class="banner-container">
-        <img src="banner.jpg" alt="Banner Image" class="img-fluid w-100">
+        <img src="apply-banner.jpg" alt="Apply Banner" class="img-fluid w-100">
     </div>
 
-    <!-- Three Column Section -->
+    <!-- Content Section -->
     <div class="container py-5">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img src="image1.jpg" alt="Column 1" class="img-fluid rounded mb-3">
-                <p>Short description of Column 1 content.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="image2.jpg" alt="Column 2" class="img-fluid rounded mb-3">
-                <p>Short description of Column 2 content.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="image3.jpg" alt="Column 3" class="img-fluid rounded mb-3">
-                <p>Short description of Column 3 content.</p>
-            </div>
-        </div>
-    </div>
+        <h2 class="text-center mb-4">Join the Olive Avenue Team</h2>
+        <p class="text-center mb-5">Come let us steal your limbs.</p>
 
-    <!-- Two Column Section -->
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="bigimage1.jpg" alt="Big Column 1" class="img-fluid rounded mb-3">
-                <p>Description of Big Column 1 content.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="bigimage2.jpg" alt="Big Column 2" class="img-fluid rounded mb-3">
-                <p>Description of Big Column 2 content.</p>
-            </div>
-        </div>
-    </div>
+        <h3>THIS IS ALL PLACEHOLDER CODE!</h3>
 
-    <!-- Three Row Section -->
-    <div class="container py-5">
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <img src="rowimage1.jpg" alt="Row 1" class="img-fluid rounded">
+        <form class="bg-dark text-light p-4 rounded">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
             </div>
-            <div class="col-md-8">
-                <p>Description of Row 1 content.</p>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <img src="rowimage2.jpg" alt="Row 2" class="img-fluid rounded">
+            <div class="mb-3">
+                <label for="portfolio" class="form-label">Portfolio/Website</label>
+                <input type="url" class="form-control" id="portfolio" placeholder="Link to your portfolio or website">
             </div>
-            <div class="col-md-8">
-                <p>Description of Row 2 content.</p>
+            <div class="mb-3">
+                <label for="message" class="form-label">Why do you want to join?</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your motivation..."></textarea>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="rowimage3.jpg" alt="Row 3" class="img-fluid rounded">
-            </div>
-            <div class="col-md-8">
-                <p>Description of Row 3 content.</p>
-            </div>
-        </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+        </form>
     </div>
 
     <!-- Footer -->
