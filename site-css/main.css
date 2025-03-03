@@ -9,8 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transition: 0.3sease-in-out;
-    animation: 0.75sease-in-out 0s 1 normal none running fadeIn;
+    transition: 0.3s ease-in-out;
+    animation: 0.75s ease-in-out 0s 1 normal none running fadeIn;
 }
 
 .header-logo-formatting {
@@ -126,4 +126,41 @@ img,video {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
+}
+
+.topfooter-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0px;
+    margin-block: 2rem;
+    background-image: url("https://olive-avenue.net/homepage-images/homepage-banner.jpg");
+}
+
+.bottomfooter-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0px;
+    color: white;
+    background-color: rgb(47, 127, 231);
+    font-size: 0.8rem;
+}
+
+.bottomfooter-base img {
+    width: 13rem;
+    margin-block: 1rem;
+}
+
+.footers-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-block: 1rem;
+    color: rgb(160, 174, 192);
+    border-top: 1px solid rgb(160, 174, 192);
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
