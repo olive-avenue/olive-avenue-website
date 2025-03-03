@@ -1,0 +1,129 @@
+/* test */
+
+.header-formatting {
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3sease-in-out;
+    animation: 0.75sease-in-out 0s 1 normal none running fadeIn;
+}
+
+.header-logo-formatting {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.header-img-formatting {
+    width: 16.7rem;
+    cursor: pointer;
+}
+
+.navbar-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-block-formatting {
+    display: flex;
+    flex-flow: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+}
+
+.navbar-text {
+    color: white;
+    font-size: 1.25rem;
+    transition: transform 200ms, color 200ms;
+}
+
+.navbar-text-spacing {
+    position: relative;
+    display: inline-block;
+}
+
+html {
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+    -moz-tab-size:4;
+    -o-tab-size:4;
+    tab-size:4;
+    font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal
+}
+
+body {
+    margin:0;
+    line-height:inherit
+}
+
+hr {
+    height:0;
+    color:inherit;border-top-width:1px
+}
+
+img,video {
+    max-width:100%;
+    height:auto
+}
+
+.frame {
+    height: 100%;
+}
+
+.gJtDCr {
+    height: calc(8rem + 100vh);
+    background-image: url("https://olive-avenue.net/homepage-images/homepage-banner.jpg");
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eKmeJV {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-image: linear-gradient(80deg, rgba(2, 20, 35, 0.9), transparent 70%); */
+    mix-blend-mode: hard-light;
+    z-index: 3;
+}
+
+.bEhjOq {
+    width: 40%;
+    color: rgb(255, 255, 255);
+    margin-top: -12rem;
+    position: absolute;
+    filter: drop-shadow(rgba(6, 70, 120, 0.4) 0px 0px 10px) drop-shadow(rgba(0, 0, 0, 0.4) 0px 2px 4px);
+    left: 10vw;
+    z-index: 3;
+}
+
+.lfPpez {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1;
+}
+
+.jTPAGE {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}

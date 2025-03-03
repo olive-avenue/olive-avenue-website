@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- basic info/look tags -->
+    <title>Olive Avenue</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olive Avenue</title>
+    <link rel="icon" href="logo.png">
+
+    <!-- page specific custom css linking -->
+    <link rel="stylesheet" href="homepage.css">
+
+    <!-- sitewide custom css documents -->
+    <link rel="stylesheet" href="site-css/main.css">
+    <link rel="stylesheet" href="buttons.css">
+
+    <!-- boostrap linking -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!-- javascript sheet linking -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 
     <!-- embed information -->
     <meta content="olive-avenue.net" property="og:site_name">
@@ -16,99 +32,69 @@
     <meta property="og:image" content="https://olive-avenue.net/logo.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
-
-    <link rel="icon" href="logo.png">
 </head>
 
 <body class="bg-dark text-light">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Olive Avenue Logo" width="50" height="50">
-                Olive Avenue
+    <header class="header-formatting">
+        <div class="header-logo-formatting">
+            <a href="https://olive-avenue.net">
+                <img src="sitewide-images/oa-logo.png" alt="olive avenue logo square" class="header-img-formatting">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/episodes/">Episodes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/meet-the-team/">Meet the Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/join-the-team/">Join the Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://store.olive-avenue.net">Merch Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.fandom.com/wiki/Olive_Avenue_Wiki">Wiki</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://olive-avenue.net/about/">About</a></li>
-                </ul>
-            </div>
         </div>
-    </nav>
+        <nav class="navbar-block">
+            <div class="navbar-block-formatting">
+                <div class="navbar-text-spacing">
+                    <a class="navbar-text" href="https://olive-avenue.net/episodes">Episodes</a>
+                </div>
+                <div class="navbar-text-spacing">
+                    <a class="navbar-text" href="https://olive-avenue.net/meet-the-team">Meet the Team</a>
+                </div>
+                <div class="navbar-text-spacing">
+                    <a class="navbar-text" href="https://olive-avenue.net/join-the-team">Join the Team</a>
+                </div>
+                <div class="navbar-text-spacing">
+                    <a class="navbar-text" href="https://store.olive-avenue.net/">Store</a>
+                </div>
+                <div class="navbar-text-spacing">
+                    <a class="navbar-text" href="https://olive-avenue.net/about/">About</a>
+                </div>
+            </div>
+            <div class="flex space-x-4 items-center"></div>
+        </nav>
+    </header>
 
-    <!-- Banner Image -->
-    <div class="banner-container">
-        <img src="banner.jpg" alt="Banner Image" class="img-fluid w-100">
-    </div>
+    <!-- header image -->
+    <section class="frame">
+        <div class="gJtDCr">
+            <div class="eKmeJV"></div>
+            <div class="bEhjOq">
+                <h1 class="lfPpez">"Modern day 'King of the Hill'</h1>
+                <h2 class="jTPAGE">- some random guy</h2>
+            </div>
+        </div>
+    </section>
 
-    <!-- Three Column Section -->
-    <div class="container py-5">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img src="image1.jpg" alt="Column 1" class="img-fluid rounded mb-3">
-                <p>Short description of Column 1 content.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="image2.jpg" alt="Column 2" class="img-fluid rounded mb-3">
-                <p>Short description of Column 2 content.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="image3.jpg" alt="Column 3" class="img-fluid rounded mb-3">
-                <p>Short description of Column 3 content.</p>
-            </div>
+    <!-- section 1 -->
+    <section>
+        <div>
+            <h3>Section 1</h3>
         </div>
-    </div>
+    </section>
 
-    <!-- Two Column Section -->
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="bigimage1.jpg" alt="Big Column 1" class="img-fluid rounded mb-3">
-                <p>Description of Big Column 1 content.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="bigimage2.jpg" alt="Big Column 2" class="img-fluid rounded mb-3">
-                <p>Description of Big Column 2 content.</p>
-            </div>
+    <!-- section 2 -->
+    <section>
+        <div>
+            <h3>Section 2</h3>
         </div>
-    </div>
+    </section>
 
-    <!-- Three Row Section -->
-    <div class="container py-5">
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <img src="rowimage1.jpg" alt="Row 1" class="img-fluid rounded">
-            </div>
-            <div class="col-md-8">
-                <p>Description of Row 1 content.</p>
-            </div>
+    <!-- section 3 -->
+    <section>
+        <div>
+            <h3>Section 3</h3>
         </div>
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <img src="rowimage2.jpg" alt="Row 2" class="img-fluid rounded">
-            </div>
-            <div class="col-md-8">
-                <p>Description of Row 2 content.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="rowimage3.jpg" alt="Row 3" class="img-fluid rounded">
-            </div>
-            <div class="col-md-8">
-                <p>Description of Row 3 content.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
