@@ -48,7 +48,12 @@
 .navbar-text {
     color: white;
     font-size: 1.25rem;
+    text-decoration: inherit;
     transition: transform 200ms, color 200ms;
+}
+
+.navbar-text:hover {
+    color: rgb(153, 179, 215)
 }
 
 .navbar-text-spacing {
@@ -135,7 +140,8 @@ img,video {
     justify-content: center;
     padding: 4rem 0px;
     margin-block: 2rem;
-    background-image: url("https://olive-avenue.net/homepage-images/homepage-banner.jpg");
+    background: url("../sitewide-images/footer-bg.jpg");
+    background-size: cover;
 }
 
 .bottomfooter-base {
@@ -145,7 +151,7 @@ img,video {
     justify-content: center;
     padding: 3rem 0px;
     color: white;
-    background-color: rgb(47, 127, 231);
+    background-color: rgb(34, 111, 211);
     font-size: 0.8rem;
 }
 
@@ -163,4 +169,34 @@ img,video {
     border-top: 1px solid rgb(160, 174, 192);
     font-size: 1.5rem;
     padding-top: 1rem;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 3em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+.a-formatting {
+    position: relative;
+    color: rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(rgba(6, 70, 120, 0.4) 0px 0px 10px) drop-shadow(rgba(0, 0, 0, 0.4) 0px 2px 4px);
+    transition: margin-top 100ms, color 200ms;
+}
+
+.a-formatting:hover {
+    color: rgb(153, 179, 215)
+}
+
+.body-padding {
+    padding: 4rem;
 }
