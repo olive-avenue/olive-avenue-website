@@ -198,5 +198,53 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 }
 
 .body-padding {
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.section-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 64px;
+    margin-block: 2rem;
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 64px;
+}
+
+.text-container {
+    width: 50%;
+    padding-inline: 2.5rem;
+}
+
+.image-container {
+    width: 50%;
+    padding-inline: 2.5rem;
+}
+
+.a-tag-button {
+        font-weight: 600;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 6rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: 0.2sease-in-out;
+        text-decoration: inherit;
+}
+
+.a-tag-button:hover {
+    background-color: rgb(153, 179, 215)
 }
