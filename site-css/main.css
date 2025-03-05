@@ -80,10 +80,7 @@ hr {
     color:inherit;border-top-width:1px
 }
 
-img,video {
-    max-width:100%;
-    height:auto
-}
+
 
 .frame {
     height: 100%;
