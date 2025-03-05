@@ -92,6 +92,7 @@ img,video {
 .gJtDCr {
     height: calc(8rem + 100vh);
     background-image: url("https://olive-avenue.net/homepage-images/homepage-banner.jpg");
+    background-size: cover;
     position: relative;
     overflow: hidden;
     display: flex;
