@@ -1,5 +1,7 @@
 /* test */
 
+
+
 .header-formatting {
     width: 100%;
     padding: 1rem;
@@ -245,4 +247,125 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 
 .a-tag-button:hover {
     background-color: rgb(153, 179, 215)
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:640px)
+{
+    .container {
+        max-width:640px
+    }
+
+    .header-formatting {
+        flex-direction: column;
+    }
+
+    .body-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .section-block {
+        flex-direction: column;
+    }
+
+    .text-container {
+        align-content: center;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img-formatting {
+        width: 12rem;
+        cursor: pointer;
+    }
+
+    .header-formatting {
+        padding: .2rem;
+    }
+
+    .navbar-text {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:768px)
+{
+    .container {
+        max-width:768px
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .section-block {
+        flex-direction: row;
+    }
+
+    .header-formatting {
+        padding: 1rem;
+    }
+    
+    .header-img-formatting {
+        width: 16.7rem;
+        cursor: pointer;
+    }
+
+    .navbar-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1024px)
+{
+    .container {
+        max-width:1024px
+    }
+
+    .header-formatting {
+        flex-direction: row;
+    }
+
+    .body-padding {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+}
+
+@media (min-width:1280px)
+{
+    .container {
+        max-width:1280px
+    }
+}
+
+@media (min-width:1536px)
+{
+    .container {
+        max-width:1536px
+    }
 }
