@@ -310,6 +310,14 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
         font-size: 1rem;
         gap: 1rem;
     }
+
+    .navbar-block-formatting {
+        gap: .7rem;
+    }
+
+    .navbar-block {
+        gap: 0rem;
+    }
 }
 
 @media (min-width:640px)
