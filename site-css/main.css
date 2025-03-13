@@ -255,6 +255,57 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     align-items: center;
 }
 
+@media (max-width:639px)
+{
+    .container {
+        max-width:640px
+    }
+
+    .header-formatting {
+        flex-direction: column;
+    }
+
+    .body-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .section-block {
+        flex-direction: column;
+    }
+
+    .text-container {
+        align-content: center;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img-formatting {
+        width: 12rem;
+        cursor: pointer;
+    }
+
+    .header-formatting {
+        padding: .2rem;
+    }
+
+    .navbar-text {
+        font-size: 1rem;
+    }
+}
+
 @media (min-width:640px)
 {
     .container {
