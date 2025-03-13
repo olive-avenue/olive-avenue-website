@@ -304,6 +304,12 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     .navbar-text {
         font-size: 1rem;
     }
+
+    .footers-links {
+        max-width: 100%;
+        font-size: 1rem;
+        gap: 1rem;
+    }
 }
 
 @media (min-width:640px)
