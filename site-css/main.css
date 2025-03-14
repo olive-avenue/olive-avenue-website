@@ -22,6 +22,10 @@ body {
     line-height:inherit
 }
 
+p {
+    font-size: 14pt;
+}
+
 /* header */
 .header-formatting {
     width: 100%;
@@ -172,7 +176,7 @@ body {
     color: rgb(160, 174, 192);
     border-top: 1px solid rgb(160, 174, 192);
     font-size: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .svg-inline--fa {
@@ -191,6 +195,11 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 .body-padding {
     padding-left: 4rem;
     padding-right: 4rem;
+}
+
+.extra-body-padding {
+    padding-left: 12rem;
+    padding-right: 12rem;
 }
 
 .section-block {
@@ -228,28 +237,89 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     align-items: center;
 }
 
-/* media queries */
-@media (max-width:639px)
-{
-    .container {
-        max-width:640px
-    }
+.navbar-text {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: inherit;
+    transition: transform 200ms, color 200ms;
+}
 
+.navbar-text:hover {
+    color: rgb(71, 104, 149)
+}
+
+.navbar-text-spacing {
+    position: relative;
+    display: inline-block;
+}
+
+/* footer button links */
+.a-formatting {
+    position: relative;
+    color: rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(rgba(6, 70, 120, 0.4) 0px 0px 10px) drop-shadow(rgba(0, 0, 0, 0.4) 0px 2px 4px);
+    transition: margin-top ease 200ms, color 200ms;
+}
+
+.a-formatting:hover {
+    color: rgb(153, 179, 215);
+    margin-top: -10px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    transition: top ease 200ms, color 200ms;
+}
+
+.footer-links:hover {
+    color: rgb(153, 179, 215);
+    top: -10px;
+}
+
+.footer-text {
+    font-size: 12pt;
+}
+
+/* plain ol buttons */
+.a-tag-button {
+    font-weight: 600;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 6rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform ease 200ms, background-color 200ms;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.a-tag-button:hover {
+    background-color: rgb(153, 179, 215);
+    transform: translate(0, -5px);
+}
+
+/* media queries */
+
+@media (max-width:399px)
+{
+    p {
+        font-size: 13pt;
+    }
     .header-formatting {
         flex-direction: column;
+        padding: .5rem;
     }
 
-    .body-padding {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .text-container {
-        width: 100%;
-    }
-
-    .image-container {
-        width: 100%;
+    .extra-body-padding {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .section-block {
@@ -257,51 +327,29 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     }
 
     .text-container {
-        align-content: center;
+        width: 100%;
+        padding-inline: 0rem;
     }
 
-    .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header-img-formatting {
-        width: 12rem;
-        cursor: pointer;
-    }
-
-    .header-formatting {
-        padding: .2rem;
-    }
-
-    .navbar-text {
-        font-size: 1rem;
+    .image-container {
+        width: 100%;
+        padding-inline: 0rem;
     }
 
     .footers-links {
-        max-width: 100%;
-        font-size: 1rem;
-        gap: 1rem;
+        font-size: .8rem;
     }
 
-    .navbar-block-formatting {
-        gap: .7rem;
+    .header-img-formatting {
+        width: 12rem;
     }
 
-    .navbar-block {
-        gap: 0rem;
-    }
-}
-
-@media (min-width:640px)
-{
-    .container {
-        max-width:640px
+    .navbar-text {
+        font-size: .8rem;
     }
 
-    .header-formatting {
-        flex-direction: column;
+    .section-block {
+        padding-block: 10px;
     }
 
     .body-padding {
@@ -309,12 +357,24 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
         padding-right: 2rem;
     }
 
-    .text-container {
-        width: 100%;
+    .footer-text {
+        font-size: 8pt;
+    }
+}
+
+@media (max-width:640px)
+{
+    p {
+        font-size: 13pt;
+    }
+    .header-formatting {
+        flex-direction: column;
+        padding: .5rem;
     }
 
-    .image-container {
-        width: 100%;
+    .extra-body-padding {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .section-block {
@@ -322,89 +382,47 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     }
 
     .text-container {
-        align-content: center;
+        width: 100%;
+        padding-inline: 0rem;
     }
 
-    .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .image-container {
+        width: 100%;
+        padding-inline: 0rem;
+    }
+
+    .footers-links {
+        font-size: .8rem;
     }
 
     .header-img-formatting {
         width: 12rem;
-        cursor: pointer;
-    }
-
-    .header-formatting {
-        padding: .2rem;
     }
 
     .navbar-text {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width:768px)
-{
-    .container {
-        max-width:768px
-    }
-
-    .text-container {
-        width: 50%;
-    }
-
-    .image-container {
-        width: 50%;
+        font-size: .8rem;
     }
 
     .section-block {
-        flex-direction: row;
-    }
-
-    .header-formatting {
-        padding: 1rem;
-    }
-    
-    .header-img-formatting {
-        width: 16.7rem;
-        cursor: pointer;
-    }
-
-    .navbar-text {
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width:1024px)
-{
-    .container {
-        max-width:1024px
-    }
-
-    .header-formatting {
-        flex-direction: row;
+        padding-block: 10px;
     }
 
     .body-padding {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-
-}
-
-@media (min-width:1280px)
-{
-    .container {
-        max-width:1280px
+    .footer-text {
+        font-size: 8pt;
     }
 }
 
-@media (min-width:1536px)
+@media (max-width:768px)
 {
-    .container {
-        max-width:1536px
-    }
+    
+}
+
+@media (max-width:1024px)
+{
+
 }

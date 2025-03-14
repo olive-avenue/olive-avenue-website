@@ -4373,12 +4373,6 @@ input[type="button"].btn-block {
   float: none;
 }
 
-.navbar-text {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
