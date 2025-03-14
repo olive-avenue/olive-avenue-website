@@ -1,7 +1,28 @@
-/* test */
+/* M A I N   C S S   D O C U M E N T */
+
+/* FOR formatting, styling */
 
 
+/* ----------------------- */
 
+
+/* formatting/spacing */
+/* big whole tag formatting */
+html {
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+    -moz-tab-size:4;
+    -o-tab-size:4;
+    tab-size:4;
+    font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal
+}
+
+body {
+    margin:0;
+    line-height:inherit
+}
+
+/* header */
 .header-formatting {
     width: 100%;
     padding: 1rem;
@@ -13,6 +34,9 @@
     align-items: center;
     transition: 0.3s ease-in-out;
     animation: 0.75s ease-in-out 0s 1 normal none running fadeIn;
+    background-color: rgba(33, 32, 53, 0.47);
+    backdrop-filter: blur(4px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
 }
 
 .header-logo-formatting {
@@ -31,6 +55,37 @@
     cursor: pointer;
 }
 
+.header-image-container {
+    height: calc(8rem + 100vh);
+    background-image: url("https://olive-avenue.net/homepage-images/homepage-banner.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-image-space {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-image: linear-gradient(80deg, rgba(2, 20, 35, 0.9), transparent 70%); */
+    mix-blend-mode: hard-light;
+    z-index: 3;
+}
+
+.image-hover {
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.2s; 
+    -webkit-transition-timing-function: ease;
+}
+
+.image-hover:hover {
+    transform: scale(1.05);
+}
+
+/* navbar */
 .navbar-block {
     display: flex;
     flex-direction: row;
@@ -47,68 +102,16 @@
     text-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
 }
 
-.navbar-text {
-    color: white;
-    font-size: 1.25rem;
-    text-decoration: inherit;
-    transition: transform 200ms, color 200ms;
-}
-
-.navbar-text:hover {
-    color: rgb(153, 179, 215)
-}
-
-.navbar-text-spacing {
-    position: relative;
-    display: inline-block;
-}
-
-html {
-    line-height:1.5;
-    -webkit-text-size-adjust:100%;
-    -moz-tab-size:4;
-    -o-tab-size:4;
-    tab-size:4;
-    font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal
-}
-
-body {
-    margin:0;
-    line-height:inherit
-}
-
-hr {
+.hr-class {
     height:0;
-    color:inherit;border-top-width:1px
+    color:inherit;
+    border-top-width:1px;
+    width: 80%;
+    margin: auto;
 }
 
-
-
-.frame {
-    height: 100%;
-}
-
-.gJtDCr {
-    height: calc(8rem + 100vh);
-    background-image: url("https://olive-avenue.net/homepage-images/homepage-banner.jpg");
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.eKmeJV {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    /* background-image: linear-gradient(80deg, rgba(2, 20, 35, 0.9), transparent 70%); */
-    mix-blend-mode: hard-light;
-    z-index: 3;
-}
-
-.bEhjOq {
+/* hero text */
+.hero-text-container {
     width: 40%;
     color: rgb(255, 255, 255);
     margin-top: -12rem;
@@ -118,7 +121,7 @@ hr {
     z-index: 3;
 }
 
-.lfPpez {
+.hero-text-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -127,12 +130,13 @@ hr {
     line-height: 1;
 }
 
-.jTPAGE {
+.hero-text-subtitle {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
 
+/* footer formatting */
 .topfooter-base {
     display: flex;
     flex-direction: column;
@@ -183,20 +187,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     box-sizing: content-box;
 }
 
-.a-formatting {
-    position: relative;
-    color: rgb(255 255 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: drop-shadow(rgba(6, 70, 120, 0.4) 0px 0px 10px) drop-shadow(rgba(0, 0, 0, 0.4) 0px 2px 4px);
-    transition: margin-top 100ms, color 200ms;
-}
-
-.a-formatting:hover {
-    color: rgb(153, 179, 215)
-}
-
+/* body formatting */
 .body-padding {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -231,30 +222,13 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     padding-inline: 2.5rem;
 }
 
-.a-tag-button {
-        font-weight: 600;
-        display: inline-block;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        border-radius: 6rem;
-        padding: 0.75rem 1.5rem;
-        font-size: 1.25rem;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: 0.2sease-in-out;
-        text-decoration: inherit;
-}
-
-.a-tag-button:hover {
-    background-color: rgb(153, 179, 215)
-}
-
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* media queries */
 @media (max-width:639px)
 {
     .container {
@@ -414,8 +388,8 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     }
 
     .body-padding {
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 
 
