@@ -6,6 +6,24 @@
 /* ----------------------- */
 
 
+/* fonts */
+@font-face {
+    font-family: "olive-bold";
+    font-weight: bold;
+    src: url("../fonts/antique-olive-bold.woff") format('woff');
+}
+.olive-bold {
+    font-family: "olive-bold", sans-serif;
+}
+
+@font-face {
+    font-family: "olive-regular";
+    src: url("../fonts/antique-olive-regular.woff") format('woff');
+}
+.olive-regular {
+    font-family: "olive-regular", sans-serif;
+}
+
 /* formatting/spacing */
 /* big whole tag formatting */
 html {
@@ -132,12 +150,14 @@ p {
     margin-bottom: 1rem;
     letter-spacing: -0.05rem;
     line-height: 1;
+    font-family: "olive-bold", sans-serif;
 }
 
 .hero-text-subtitle {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
+    font-family: "olive-regular", sans-serif;
 }
 
 /* footer formatting */
@@ -239,9 +259,10 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 
 .navbar-text {
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-decoration: inherit;
     transition: transform 200ms, color 200ms;
+    font-family: "olive-regular", sans-serif;
 }
 
 .navbar-text:hover {
@@ -346,7 +367,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     }
 }
 
-@media (max-width:840px)
+@media (max-width:850px)
 {
     .header-formatting {
         flex-direction: column;
@@ -375,6 +396,10 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     .image-container {
         max-width: 100%;
         padding-inline: 2rem;
+    }
+
+    .navbar-text {
+        font-size: 1rem;
     }
 }
 
@@ -416,7 +441,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     }
 
     .navbar-text {
-        font-size: .8rem;
+        font-size: .72rem;
     }
 
     .section-block {
