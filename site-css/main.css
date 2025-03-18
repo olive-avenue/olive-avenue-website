@@ -222,12 +222,12 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 }
 
 .text-container {
-    width: 50%;
+    max-width: 50%;
     padding-inline: 2.5rem;
 }
 
 .image-container {
-    width: 50%;
+    max-width: 50%;
     padding-inline: 2.5rem;
 }
 
@@ -307,122 +307,136 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 
 /* media queries */
 
-@media (max-width:399px)
+@media (max-width:3840px)
 {
-    p {
-        font-size: 13pt;
-    }
-    .header-formatting {
-        flex-direction: column;
-        padding: .5rem;
+    .body-padding {
+        padding-left: 20rem;
+        padding-right: 20rem;
     }
 
     .extra-body-padding {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-
-    .section-block {
-        flex-direction: column;
-    }
-
-    .text-container {
-        width: 100%;
-        padding-inline: 0rem;
-    }
-
-    .image-container {
-        width: 100%;
-        padding-inline: 0rem;
-    }
-
-    .footers-links {
-        font-size: .8rem;
-    }
-
-    .header-img-formatting {
-        width: 12rem;
-    }
-
-    .navbar-text {
-        font-size: .8rem;
-    }
-
-    .section-block {
-        padding-block: 10px;
-    }
-
-    .body-padding {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .footer-text {
-        font-size: 8pt;
+        padding-left: 30rem;
+        padding-right: 30rem;
     }
 }
 
-@media (max-width:640px)
+@media (max-width:1920px)
 {
-    p {
-        font-size: 13pt;
-    }
-    .header-formatting {
-        flex-direction: column;
-        padding: .5rem;
+    .body-padding {
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 
     .extra-body-padding {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
-
-    .section-block {
-        flex-direction: column;
-    }
-
-    .text-container {
-        width: 100%;
-        padding-inline: 0rem;
-    }
-
-    .image-container {
-        width: 100%;
-        padding-inline: 0rem;
-    }
-
-    .footers-links {
-        font-size: .8rem;
-    }
-
-    .header-img-formatting {
-        width: 12rem;
-    }
-
-    .navbar-text {
-        font-size: .8rem;
-    }
-
-    .section-block {
-        padding-block: 10px;
-    }
-
-    .body-padding {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .footer-text {
-        font-size: 8pt;
-    }
-}
-
-@media (max-width:768px)
-{
-    
 }
 
 @media (max-width:1024px)
 {
+    .body-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
+    .extra-body-padding {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
 }
+
+@media (max-width:840px)
+{
+    .header-formatting {
+        flex-direction: column;
+    }
+
+    .body-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .extra-body-padding {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .section-block {
+        flex-direction: column;
+    }
+
+    .text-container {
+        max-width: 100%;
+        padding-inline: 2rem;
+        margin-top: 2rem;
+    }
+
+    .image-container {
+        max-width: 100%;
+        padding-inline: 2rem;
+    }
+}
+
+@media (max-width:544px)
+{
+    p {
+        font-size: 13pt;
+    }
+    .header-formatting {
+        flex-direction: column;
+        padding: .5rem;
+    }
+
+    .extra-body-padding {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .section-block {
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 100%;
+        padding-inline: 0rem;
+    }
+
+    .image-container {
+        width: 100%;
+        padding-inline: 0rem;
+    }
+
+    .footers-links {
+        font-size: .8rem;
+    }
+
+    .header-img-formatting {
+        width: 12rem;
+    }
+
+    .navbar-text {
+        font-size: .8rem;
+    }
+
+    .section-block {
+        padding-block: 10px;
+    }
+
+    .body-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer-text {
+        font-size: 8pt;
+    }
+
+    .extra-body-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+
