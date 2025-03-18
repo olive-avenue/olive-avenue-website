@@ -125,9 +125,9 @@ p {
 }
 
 .hr-class {
-    height:0;
-    color:inherit;
-    border-top-width:1px;
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
     width: 80%;
     margin: auto;
 }
@@ -186,17 +186,6 @@ p {
 .bottomfooter-base img {
     width: 13rem;
     margin-block: 1rem;
-}
-
-.footers-links {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-block: 1rem;
-    color: rgb(160, 174, 192);
-    border-top: 1px solid rgb(160, 174, 192);
-    font-size: 1.5rem;
-    padding-top: 2rem;
 }
 
 .svg-inline--fa {
@@ -290,10 +279,31 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     margin-top: -10px;
 }
 
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-block: 1rem;
+    color: rgb(160, 174, 192);
+    border-top: 1px solid rgb(160, 174, 192);
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
 .footer-links {
     text-decoration: none;
     color: white;
     transition: top ease 200ms, color 200ms;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "olive-regular", sans-serif;
 }
 
 .footer-links:hover {
@@ -302,12 +312,12 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 }
 
 .footer-text {
-    font-size: 12pt;
+    font-size: .9rem;
 }
 
 /* plain ol buttons */
 .a-tag-button {
-    font-weight: 600;
+    font-family: "olive-regular", sans-serif;
     display: inline-block;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -408,6 +418,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     p {
         font-size: 13pt;
     }
+
     .header-formatting {
         flex-direction: column;
         padding: .5rem;
@@ -432,8 +443,12 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
         padding-inline: 0rem;
     }
 
-    .footers-links {
+    .footer-icons {
         font-size: .8rem;
+    }
+
+    .footer-text {
+        font-size: .6rem;
     }
 
     .header-img-formatting {
@@ -451,10 +466,6 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     .body-padding {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-
-    .footer-text {
-        font-size: 8pt;
     }
 
     .extra-body-padding {

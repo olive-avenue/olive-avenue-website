@@ -12,7 +12,6 @@
 
         <!-- sitewide custom css documents -->
         <link rel="stylesheet" href="site-css/main.css">
-        <link rel="stylesheet" href="site-css/buttons.css">
 
         <!-- boostrap linking -->
         <link href="site-css/bootstrap-4.4.1.css" rel="stylesheet">
@@ -37,7 +36,21 @@
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .heebo-regular {
+            font-family: "Heebo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+        </style>
     </head>
 
     <body class="bg-dark text-light">
@@ -146,7 +159,7 @@
         <section class="extra-body-padding">
             <div class="hero-block">
                 <h1 class="olive-bold">What is Olive Avenue?</h1>
-                <p>A modern take on 'King of the Hill', Olive Avenue follows Roy Strofferson and Nate Riley, 2 decidedly average but unique teens/young adults growing up in South Central Pennsylvania in the late 2010's. Keeping sane through tech nerding, peculiar PA predicaments, 0 football team win schools, and old folk obscura, the series follows situations the duo ends up in.<br>
+                <p class="heebo-regular">A modern take on 'King of the Hill', Olive Avenue follows Roy Strofferson and Nate Riley, 2 decidedly average but unique teens/young adults growing up in South Central Pennsylvania in the late 2010's. Keeping sane through tech nerding, peculiar PA predicaments, 0 football team win schools, and old folk obscura, the series follows situations the duo ends up in.<br>
                 <br>
                 On the back end, things are brewing worldwide as strange occurrences hit the news every few months. Lake Michigan running dry for 2 hours, GPS miscalculations, New Zealand disappearing and reappearing, government tax and deed websites frequently jamming from sporatic mass information overwriting.<br>
                 <br>
@@ -162,7 +175,7 @@
                 <div class="text-container">
                     <h2 class="olive-bold">Our Team Members</h2>
 
-                    <p style="padding-bottom: 1rem;">The team helping produce Olive Avenue is currently small, but mighty! It's made up of several passionate skilled people, and we're proud to have them with us. See our current team members, what they do for the project, and how to connect with them.</p>
+                    <p style="padding-bottom: 1rem;" class="heebo-regular">The team helping produce Olive Avenue is currently small, but mighty! It's made up of several passionate skilled people, and we're proud to have them with us. See our current team members, what they do for the project, and how to connect with them.</p>
 
                     <div class="button-container">
                         <a href="https://olive-avenue.net/team-members" class="a-tag-button">Meet our Team Members &raquo;</a>
@@ -186,7 +199,7 @@
                 <div class="text-container">
                     <h2 class="olive-bold">Join our Team</h2>
 
-                    <p style="padding-bottom: 1rem;">Interested in helping make Olive Avenue episodes? Our team is built on providing artists, writers, and voice actors a platform to practice and grow their skills while producing something larger than themselves. We're always looking for new members looking to grow and expand their skillset while helping out!</p>
+                    <p style="padding-bottom: 1rem;" class="heebo-regular">Interested in helping make Olive Avenue episodes? Our team is built on providing artists, writers, and voice actors a platform to practice and grow their skills while producing something larger than themselves. We're always looking for new members looking to grow and expand their skillset while helping out!</p>
 
                     <div class="button-container">
                         <a href="https://olive-avenue.net/join-the-team" class="a-tag-button">Apply Now &raquo;</a>
@@ -200,7 +213,7 @@
             <div>
                 <h2 class="olive-bold">Connect with us more</h2>
             </div>
-            <div class="footers-links" style="display: flex; flex-direction: row;">
+            <div class="footer-icons" style="display: flex; flex-direction: row;">
                 <a href="https://www.youtube.com/@olive-avenue" class="a-formatting" title="YouTube">
                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
                 </a>
@@ -222,12 +235,18 @@
         <!-- Second Footer -->
         <footer class="bottomfooter-base">
             <img src="sitewide-images/oa-logo.png" class="" alt="olive avenue logo">
-
-            <span>&copy; 2025 Olive Avenue</span><br>
-            <div style="text-align: center;">
-                <h6><a href="https://olive-avenue.net/about" class="footer-links">About Us</a>  |  <a href="https://olive-avenue.net/links" class="footer-links">Links</a>  |  <a href="https://olive-avenue.net/contact" class="footer-links">Contact</a></h6>
-                <p class="footer-text">Website designed and built by Bluecolty. Hosted on GitHub Pages.</p>
+            
+            <div class="footer-div" style="padding-bottom: 2rem;">
+                <a href="https://olive-avenue.net/about" class="footer-links">About Us</a>
+                <a href="https://olive-avenue.net/links" class="footer-links">Our Links</a>
+                <a href="https://olive-avenue.net/contact" class="footer-links">Contact Us</a>
             </div>
+
+
+                <span>&copy; 2025 Olive Avenue</span><br>
+
+                <p class="footer-text olive-regular">Website designed and built by Bluecolty. Hosted on GitHub Pages.</p>
+            
         </footer>
 
         <script type="text/javascript" src="site-js/jquery.min.js"></script>
